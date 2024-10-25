@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Monitoring System</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Monitoring System</h1>
+        <form id="weather-form">
+            <input type="text" id="city" placeholder="Enter city" required>
+            <select id="unit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+            <button type="submit">Fetch Weather</button>
+        </form>
+
+        <div id="searched-weather" class="weather-results"></div>
+
+        <div id="predefined-weather" class="weather-results"></div>
+
+        <div class="chart-container">
+            <canvas id="weatherChart"></canvas>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
